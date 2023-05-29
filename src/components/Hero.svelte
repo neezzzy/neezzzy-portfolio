@@ -58,7 +58,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 100vh ;
+		padding-bottom: 20px;
 	}
 
 	.hero-title {
@@ -72,7 +73,6 @@
 	.title {
 		display: inline-block;
 		text-transform: uppercase;
-		font-size: 8vw;
-		transform-origin: bottom left;
+		font-size: 3rem;
 	}
 </style>

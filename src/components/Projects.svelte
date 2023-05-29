@@ -5,7 +5,7 @@
 	import ProjectCard from '../components/ProjectCard.svelte';
 </script>
 
-<section id="projects" class="panel p-4">
+<section id="projects" class="">
 	<hr class="border-t border-gray-300 my-4" />
 	<div class="project-wrapper">
 		<h2 class="lg:text-5xl max-md:text-3xl font-bold leading-5 text-uppercase letter-spacing-minus-1 tracking-tighter">
@@ -17,7 +17,7 @@
 				have worked on.
 			</p>
 		</div>
-		<div class="project-text">
+		<div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 			{#each projects as project}
 				<ProjectCard {project} />
 			{/each}
@@ -38,10 +38,6 @@
 	}
 
 	.project-text {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: stretch;
-		text-align: left;
+
 	}
 </style>

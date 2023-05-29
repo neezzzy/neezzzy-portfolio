@@ -1,31 +1,21 @@
 <script lang="ts">
-  import type { Project } from '../types/project';
-  export let project: Project;
+	import type { Project } from '../types/project';
+	export let project: Project;
 </script>
 
-<a href={project.link} target="_blank" rel="noopener noreferrer" class="block">
-  <div class="project-card bg-slate-200 rounded-md mt-5 mb-5 overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
-    <div class="project-image relative aspect-h-9">
-      <img src={project.image} alt={project.title} class="absolute w-full h-full object-cover " />
-    </div>
-    <div class="project-content p-4">
-      <h2 class="lg:text-2xl max-md:text-xl font-semibold text-slate-900 mb-2">{project.title}</h2>
-      <p class="lg:text-xl max-md:text-md text-slate-700 mb-4">{project.description}</p>
-    </div>
-  </div>
+<a href={project.link} class="w-72 bg-gray-100 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+	<img src={project.image} alt={project.title} class="h-80 w-72 object-cover rounded-t-xl" />
+	<div class="px-4 py-3 w-72">
+		<div class="flex items-center">
+			<div class="flex flex-col justify-between px-4 py-6">
+				<span class="block mb-4 text-2xl text-gray-900 leading-tight hover:text-blue-600">
+					{project.title}
+				</span>
+				<p class="mb-4 text-gray-500">
+					{project.description}
+				</p>
+			</div>
+		</div>
+	</div>
 </a>
 
-<style>
-  .aspect-h-9 {
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  }
-
-  .project-card {
-    cursor: pointer;
-  }
-
-  .project-card:hover {
-    transform: scale-105;
-    border: 1px solid #7369f7;
-  }
-</style>
