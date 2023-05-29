@@ -5,7 +5,7 @@
 
 <footer class="footer-section pt-5 mt-5 bg-gray-800 text-white" id="footer">
   <div class="container flex flex-col items-center">
-    <h3 class="text-center text-2xl">You can also find me here</h3>
+    <h3 class="text-center lg:text-xl max-md:text-sm">You can also find me here</h3>
     <div class="flex flex-row justify-center mt-4">
       <!-- github -->
       <SocialIcon icon="icons/github.svg" href="https://github.com/neezzzy" />
@@ -13,7 +13,7 @@
       <SocialIcon icon="icons/linkedin.svg" href="https://www.linkedin.com/in/nizamovruslan/" />
     </div>
     <!-- Copyright -->
-    <div class="text-center text-2xl p-3">Made by Russell Nizamov © {date}</div>
+    <div class="text-center lg:text-md max-md:text-sm p-3">Made by Russell Nizamov © {date}</div>
   </div>
 </footer>
 

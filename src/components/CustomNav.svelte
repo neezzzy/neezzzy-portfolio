@@ -6,15 +6,15 @@
 	}
 </script>
 
-<Navbar let:hidden let:toggle>
+<Navbar class='bg-slate-100' let:hidden let:toggle>
 	<div class="theme">
-		<button on:click={toggleDarkMenu} aria-label="toggle dark menu"></button>
+		<button on:click={toggleDarkMenu} aria-label="toggle  dark menu"></button>
 	</div>
 	<NavHamburger on:click={toggle} />
-	<NavUl {hidden}>
-		<NavLi href="/" active={true}>Home</NavLi>
-		<NavLi href="#about">About Me</NavLi>
-		<NavLi href="#projects">Projects</NavLi>
+	<NavUl {hidden} >
+		<NavLi class='text-2xl' href="/" active={true}>Home</NavLi>
+		<NavLi class='text-2xl'  href="#about">About Me</NavLi>
+		<NavLi class='text-2xl'  href="#projects">Projects</NavLi>
 	</NavUl>
 </Navbar>
 
@@ -30,7 +30,7 @@
 	.dark-mode .theme button {
 		background: #dbdbdb;
 		color: #3a3a3a;
-		border: 2px solid #cfcfcf;
+		border: 1px solid #e8e8e8;
 	}
 	.theme button {
 		align-self: flex-end;

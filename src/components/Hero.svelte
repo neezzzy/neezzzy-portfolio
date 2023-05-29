@@ -28,7 +28,7 @@
 					</span>
 				</span>
 			</h1>
-			<div class="social-buttons-container flex justify-center md:justify-between gap-2">
+			<div class="social-buttons-container flex justify-center md:justify-between gap-4 p-5">
 				<a
 					aria-label="Visit Ruslan Nizamov's LinkedIn"
 					class="px-4 py-2 text-lg border border-black-200 rounded-md text-black-300 hover:bg-gray-100"
@@ -50,6 +50,7 @@
 	.hero {
 		position: relative;
 		transition: background-color 500ms;
+
 	}
 
 	.hero-main {
@@ -57,6 +58,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		height: 100vh;
 	}
 
 	.hero-title {

@@ -47,7 +47,7 @@
 
 	:global(body.dark-mode) {
 		background-color: #1d3040;
-		color: #c9cdd2;
+		color: var(--text-color);
 	}
 
 	:global(h1, h2, h3) {

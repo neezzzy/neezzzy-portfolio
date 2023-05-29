@@ -9,8 +9,8 @@
       <img src={project.image} alt={project.title} class="absolute w-full h-full object-cover " />
     </div>
     <div class="project-content p-4">
-      <h2 class="text-4xl font-semibold text-slate-900 mb-2">{project.title}</h2>
-      <p class="text-3xl text-slate-700 mb-4">{project.description}</p>
+      <h2 class="lg:text-2xl max-md:text-xl font-semibold text-slate-900 mb-2">{project.title}</h2>
+      <p class="lg:text-xl max-md:text-md text-slate-700 mb-4">{project.description}</p>
     </div>
   </div>
 </a>

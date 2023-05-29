@@ -16,11 +16,11 @@
   ];
 </script>
 
-<section id="about" class="panel p-5">
+<section id="about" class="panel p-4">
   <hr class="border-t border-gray-300 my-4" />
   <div class="about-wrapper">
-    <h2 class="text-5xl font-bold leading-5 text-uppercase letter-spacing-minus-1 tracking-tighter">About me</h2>
-    <div class="about-text text-2xl mt-4">
+    <h2 class="lg:text-5xl max-md:text-3xl font-bold leading-5 text-uppercase letter-spacing-minus-1 tracking-tighter">About me</h2>
+    <div class="about-text lg:text-2xl max-md:text-xl mt-4">
       <p class='leading-6'>
         Since I discovered programming six years ago, I have loved creating websites, making computer games, and coding solutions to solve real-world problems. I never thought that I might want to pursue it as a career in the future.
       </p>
