@@ -5,7 +5,7 @@
 	import ProjectCard from '../components/ProjectCard.svelte';
 </script>
 
-<section id="projects" class="">
+<section id="projects" class="p-4">
 	<hr class="border-t border-gray-300 my-4" />
 	<div class="project-wrapper">
 		<h2 class="lg:text-5xl max-md:text-3xl font-bold leading-5 text-uppercase letter-spacing-minus-1 tracking-tighter">
