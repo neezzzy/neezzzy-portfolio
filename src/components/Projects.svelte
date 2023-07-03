@@ -1,43 +1,35 @@
 <script lang="ts">
 	import type { Project } from '../types/project';
 	export let projects: Project[];
-
+	import { Heading, P } from 'flowbite-svelte';
 	import ProjectCard from '../components/ProjectCard.svelte';
 </script>
 
 <section id="projects" class="p-4">
 	<hr class="border-t border-gray-300 my-4" />
-	<div class="project-wrapper">
-		<h2 class="lg:text-5xl max-md:text-3xl font-bold leading-5 text-uppercase letter-spacing-minus-1 tracking-tighter">
-			Projects
-		</h2>
-		<div class="project-text lg:text-2xl max-md:text-xl mt-4">
-			<p class="leading-8">
+	<div class="flex flex-col">
+		<div class="text-center">
+			<Heading tag="h2" class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-500 text-indigo-600">Projects</Heading>
+			<P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
 				I continue to add new projects to my portfolio. Here are some of the latest projects that I
-				have worked on.
-			</p>
-		</div>
-		<div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-			{#each projects as project}
-				<ProjectCard {project} />
-			{/each}
+				have worked on. In the past few months, I have had the opportunity to work on a diverse
+				range of projects, showcasing my versatility and adaptability.
+			</P>
+			<P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+				These projects have allowed me to refine my skills in design, development, and project
+				management, while also providing valuable hands-on experience in collaborating with diverse
+				teams and meeting client expectations.
+			</P>
+			<div
+				class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+			>
+				{#each projects as project}
+					<ProjectCard {project} />
+				{/each}
+			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	.project-wrapper {
-		position: relative;
-		align-items: flex-start;
-		margin-inline: auto;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-		gap: 2rem;
-		width: 100%;
-		max-width: 60rem;
-	}
-
-	.project-text {
-
-	}
 </style>

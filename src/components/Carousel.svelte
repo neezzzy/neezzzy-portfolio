@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount, createEventDispatcher } from 'svelte';
 	import Siema from 'siema';
-
 	export let perPage: number | Record<string, number> = 3;
 	export let loop = true;
 	export let autoplay = 0;
@@ -15,6 +14,20 @@
 	let siema: HTMLElement;
 	let controller: Siema;
 	let timer: NodeJS.Timeout;
+	let icons = [
+		'icons/css.svg',
+		'icons/java.svg',
+		'icons/js.svg',
+		'icons/mongodb.svg',
+		'icons/mysql-logo.svg',
+		'icons/node-js.svg',
+		'icons/php-logo.svg',
+		'icons/python.svg',
+		'icons/react.svg',
+		'icons/svelte.svg',
+		'icons/typescript.svg',
+		'icons/react-native.svg'
+	];
 	const dispatch = createEventDispatcher();
 
 	let currentIndex = startIndex;
@@ -77,15 +90,21 @@
 
 <div class="carousel">
 	<div class="slides" bind:this={siema}>
-		<slot />
+		{#each icons as icon, index (index)}
+			<div class="stack-icon">
+				<img src={icon} alt={`Icon ${index}`} />
+			</div>
+		{/each}
 	</div>
 </div>
 
 <style>
 	.carousel {
-		padding: 50px 0;
 		overflow: hidden;
-		white-space: nowrap;
-		max-height: min-content;
+	}
+	.stack-icon img {
+		width: 50%;
+		height: auto;
+		object-fit: contain;
 	}
 </style>

@@ -1,44 +1,18 @@
 <script>
 	import { Navbar, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-
-	function toggleDarkMenu() {
-		window.document.body.classList.toggle('dark-mode');
-	}
+	import { DarkMode } from 'flowbite-svelte';
+	let btnClass =
+		'bg-gray-600 dark:bg-gray-500 dark:text-yellow-200 text-yellow-200 dark:text-gray-500 hover:bg-pink-700 dark:hover:bg-gray-700 rounded-3xl p-2';
 </script>
 
-<Navbar class='bg-slate-100' let:hidden let:toggle>
+<Navbar class="navbar bg-slate-200" let:hidden let:toggle>
 	<div class="theme">
-		<button on:click={toggleDarkMenu} aria-label="toggle  dark menu"></button>
+		<DarkMode {btnClass} />
 	</div>
 	<NavHamburger on:click={toggle} />
-	<NavUl {hidden} >
-		<NavLi class='text-2xl' href="/" active={true}>Home</NavLi>
-		<NavLi class='text-2xl'  href="#about">About Me</NavLi>
-		<NavLi class='text-2xl'  href="#projects">Projects</NavLi>
+	<NavUl {hidden}>
+		<NavLi activeClass="text-pink-600" class="text-2xl uppercase" href="/">Home</NavLi>
+		<NavLi activeClass="text-pink-600" class="text-2xl uppercase" href="#about">About Me</NavLi>
+		<NavLi activeClass="text-pink-600" class="text-2xl uppercase" href="#projects">Projects</NavLi>
 	</NavUl>
 </Navbar>
-
-<style>
-	.dark-mode .theme button:before {
-		content: '☀️';
-	}
-
-	.theme button:before {
-		content: '🌙';
-	}
-
-	.dark-mode .theme button {
-		background: #dbdbdb;
-		color: #3a3a3a;
-		border: 1px solid #e8e8e8;
-	}
-	.theme button {
-		align-self: flex-end;
-		font-size: 18px;
-		font-weight: 400;
-		padding: 8px 16px;
-		background: #3a3a3a;
-		border-radius: 100px;
-		border: 2px solid #23272a;
-	}
-</style>
