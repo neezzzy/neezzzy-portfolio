@@ -5,9 +5,9 @@
 </script>
 
 <header>
-	<section>
-		<div class="hero">
-			<Heading class="hero-title text-center">
+	<section class="h-screen">
+		<div class="flex flex-col h-full justify-center items-center ">
+			<Heading class="hero-title text-center py-4 px-6 hero">
 				<span class="title-wrapper">
 					<span class="title">
 						<div>Russell</div>
@@ -32,13 +32,3 @@
 	</section>
 </header>
 
-<style>
-	.hero {
-		transition: background-color 500ms;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-	}
-</style>
