@@ -2,7 +2,7 @@
 	import { Navbar, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 	import { DarkMode } from 'flowbite-svelte';
 	let btnClass =
-		'bg-gray-600 dark:bg-gray-500 dark:text-yellow-200 text-yellow-200 dark:text-gray-500 hover:bg-pink-700 dark:hover:bg-gray-700 rounded-3xl p-2';
+		'bg-gray-300 dark:bg-gray-100 dark:text-yellow-400 text-yellow-200 dark:text-gray-500 hover:bg-gray-500 dark:hover:bg-gray-500 rounded-3xl p-2';
 </script>
 
 <Navbar class="navbar bg-slate-200" let:hidden let:toggle>

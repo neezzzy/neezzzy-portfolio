@@ -43,16 +43,6 @@
 			format('woff2');
 	}
 
-	/* :global(.dark-mode) {
-		--body-bg: #252525;
-		--card-bg: #555;
-		--card-bd-col: #212121;
-		--text-color: #f5f5f5;
-		--surface-color: #212121;
-		--black: #0e0e0e;
-		--primary-color: #7369f7;
-	} */
-
 	:global(h1, h2, h3) {
 		font-family: 'Open Sans';
 		text-transform: uppercase;
@@ -79,13 +69,4 @@
 		color: var(--card-title);
 	}
 
-	:global(body) {
-		background-color: #f2eee2;
-		color: #313131;
-		transition: background-color 0.3s;
-	}
-	:global(body.dark-mode) {
-		background-color: #292929;
-		color: #f5f5f5;
-	}
 </style>

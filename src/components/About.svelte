@@ -7,7 +7,7 @@
 	<hr class="border-t border-gray-300" />
 	<div class="flex flex-col">
 		<div class="text-center">
-			<Heading tag="h2" class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-500 text-indigo-600">About me</Heading>
+			<Heading tag="h2" class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-600 text-indigo-600">About me</Heading>
 			<P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
 				Since I discovered programming six years ago, I have loved creating websites, making
 				computer games, and coding solutions to solve real-world problems. I never thought that I

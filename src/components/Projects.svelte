@@ -9,7 +9,11 @@
 	<hr class="border-t border-gray-300 my-4" />
 	<div class="flex flex-col">
 		<div class="text-center">
-			<Heading tag="h2" class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-500 text-indigo-600">Projects</Heading>
+			<Heading
+				tag="h2"
+				class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-600 text-indigo-600"
+				>Projects</Heading
+			>
 			<P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
 				I continue to add new projects to my portfolio. Here are some of the latest projects that I
 				have worked on. In the past few months, I have had the opportunity to work on a diverse
