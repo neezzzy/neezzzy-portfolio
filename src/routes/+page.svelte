@@ -9,7 +9,7 @@
 	const date = new Date().getFullYear();
 </script>
 
-<main class='bg-slate-100 dark:bg-gray-800'>
+<main class='bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900'>
 	<CustomNav />
 	<Hero
 		linkedInUrl="https://www.linkedin.com/in/nizamovruslan/"

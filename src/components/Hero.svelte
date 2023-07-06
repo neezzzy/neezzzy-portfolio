@@ -5,8 +5,8 @@
 </script>
 
 <header>
-	<section class="h-screen">
-		<div class="flex flex-col h-full justify-center items-center ">
+	<section class="h-full">
+		<div class="flex flex-col justify-center items-center h-[calc(100vh-60px)]">
 			<Heading class="hero-title text-center py-4 px-6 hero">
 				<span class="title-wrapper">
 					<span class="title">

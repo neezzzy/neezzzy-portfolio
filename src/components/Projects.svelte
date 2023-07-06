@@ -11,7 +11,7 @@
 		<div class="text-center">
 			<Heading
 				tag="h2"
-				class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-600 text-indigo-600"
+				class="mb-4 mt-4 text-4xl font-extrabold dark:text-indigo-700 text-indigo-600"
 				>Projects</Heading
 			>
 			<P class="mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
