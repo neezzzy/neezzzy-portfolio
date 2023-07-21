@@ -1,9 +1,9 @@
 export let projects = [
 	{
-		title: 'FlashCards App',
-		description: 'App with 100+ questions and answers.',
-		image: 'images/yotta-prep.webp',
-		link: 'https://play.google.com/store/apps/details?id=com.flashcanada.flashcardcanada'
+		title: 'BrainyCanuck',
+		description: 'App with 100+ flashcards to prepare for the Canadian Citizenship test.',
+		image: 'images/brainyCanuck.webp',
+		link: 'https://play.google.com/store/apps/details?id=com.neezzyy.flashcards'
 	},
 	{
 		title: 'Chart-UI',

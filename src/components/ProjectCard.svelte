@@ -13,7 +13,9 @@
 	<div class="px-4 py-3 w-72">
 		<div class="flex items-center">
 			<div class="flex flex-col justify-between px-4 py-6">
-				<Heading class="block mb-4 text-sm text-gray-900 leading-tight hover:text-blue-600">
+				<Heading
+					class="block mb-4 text-lg text-gray-500 dark:text-gray-100 leading-tight hover:text-blue-600 dark:hover:text-indigo-500"
+				>
 					{project.title}
 				</Heading>
 				<P class="mb-4 text-gray-500">
