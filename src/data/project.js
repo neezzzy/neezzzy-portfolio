@@ -6,10 +6,10 @@ export let projects = [
 		link: 'https://play.google.com/store/apps/details?id=com.neezzyy.flashcards'
 	},
 	{
-		title: 'Chart-UI',
-		description: 'User-friendly app that allows you to generate graphs and charts.',
-		image: 'images/ui-chart.webp',
-		link: 'https://github.com/neezzzy/chart-ui'
+		title: 'Microlearning: Windows Server Fundamentals',
+		description: 'An interactive and user-friendly microlearning module created in Articulate 360, hosted on GitHub Pages.',
+		image: 'images/windows-server-fundamentals.webp',
+		link: 'https://neezzzy.github.io/micro-learning-windows-server-fundamentals/#/'
 	},
 	{
 		title: 'Chatter App',
